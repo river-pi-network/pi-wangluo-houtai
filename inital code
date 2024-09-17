@@ -1,0 +1,7 @@
+echo "# pi-wangluo-houtai" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/river-pi-network/pi-wangluo-houtai.git
+git push -u origin main
