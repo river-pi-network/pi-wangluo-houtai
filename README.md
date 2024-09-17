@@ -1,46 +1,64 @@
-As of September 2024, the Pi Network continues its progress towards launching its Open Mainnet, but the exact date remains unclear. The project recently marked 2,000 days since its launch and is expected to announce a detailed roadmap for enabling official Pi transactions in December 2024. Currently, more than 13 million users have passed the Know-Your-Customer (KYC) verification process, with over six million having migrated to the Mainnet. The final deadline for KYC submissions and migrations is set for September 30, 2024​(
-CryptoTimes
-)​(
-CryptoPotato
-).
 
-Key aspects of the Pi Network include its use of the Stellar Consensus Protocol (SCP), which is an energy-efficient alternative to traditional Proof-of-Work (PoW) systems. This allows users to mine Pi tokens using their mobile devices without significant resource consumption. The Pi Network has also expanded its ecosystem, with 70 applications already operational or prepared for launch on the Mainnet​(
-KryptoNews
-).
+项目名称：
+Pi网络与银行端口的对接
 
-GitHub Project Plan for Pi Network Integration
-Objective:
-To create a Pi Network integration project that enables developers to utilize Pi’s mobile mining infrastructure and decentralized applications (DApps) for future Web3 projects.
+项目描述：
+该项目旨在开发一个安全、高效的系统，将Pi网络与银行支付和结算系统集成起来，帮助用户通过Pi钱包与银行账户进行双向资金流动。随着Pi网络主网即将上线，本项目将提供一个接口，允许用户将Pi网络中的加密资产与主权货币进行转换，支持存取款、转账以及其他与银行相关的金融操作。
 
-Project Scope:
+主要目标包括：
 
-KYC Verification Module:
+Pi钱包和银行账户的无缝对接：用户可以将Pi代币兑换成主权货币并存入银行账户，或者通过银行账户购买Pi代币。
+支付网关开发：通过开发支付网关，支持在线与线下商户接受Pi支付。
+合规与安全保障：确保系统符合主权国家相关金融法规，尤其是关于数字货币的监管要求，同时保障交易的安全性和隐私性。
+项目开发计划：
+阶段一：需求分析与设计（Q4 2024）
+需求分析：
+与主权国家主要银行联系，了解其API及端口要求。
+了解主权国家关于加密货币和跨境支付的法律法规，确保项目合规性。
+系统设计：
+确定系统架构，设计Pi网络与银行系统的接口，包括钱包管理、用户认证、资金转账流程等。
+设计前端用户界面，方便用户管理Pi钱包和银行账户。
+阶段二：API集成与测试（Q1 2025）
+API开发：
+开发Pi网络与银行端口的接口API，支持Pi钱包与银行账户的双向资金流动。
+集成KYC（用户身份验证）功能，确保符合银行的反洗钱和合规要求。
+测试环境搭建：
+建立测试环境，模拟真实的交易场景，确保接口的稳定性和安全性。
+与合作银行进行初步测试，验证资金流动的准确性和响应时间。
+阶段三：支付网关开发与集成（Q2 2025）
+支付网关开发：
+开发支持Pi支付的支付网关，允许用户在线和线下通过Pi网络进行支付。
+支持与商户的对接，确保交易记录透明可追溯。
+网关测试与优化：
+测试支付网关的稳定性，尤其是高并发下的性能表现。
+与银行合作进行进一步的集成测试，确保支付流程顺畅。
+阶段四：安全加固与合规审查（Q3 2025）
+安全加固：
+通过引入加密技术和多重验证机制，进一步加强交易的安全性，防止潜在的网络攻击。
+定期进行安全漏洞扫描和修复。
+合规审查：
+根据最新的主权国家金融法规和政策，确保系统符合法律要求，并提交相关的合规报告。
+阶段五：上线与推广（Q4 2025）
+上线准备：
+完成最终版本的开发和测试，准备在实际环境中部署。
+与银行、商户等合作伙伴开展市场推广活动，吸引更多用户使用Pi网络进行支付和转账。
+维护与更新：
+提供长期的技术支持和维护，及时解决用户反馈的问题，并根据新政策和技术需求进行更新迭代。
+主要技术栈：
+后端：Java, Python
+区块链：Pi网络API, Stellar Consensus Protocol (SCP)
+银行集成：RESTful API, 银行特定的SDK
+数据库：MySQL, MongoDB
+安全：SSL加密，OAuth 2.0，KYC/AML集成
+前端：React, Vue.js
+项目贡献方式：
+开发者可以通过提交Pull Request方式为项目做出贡献。
+欢迎测试人员提出问题和建议，以帮助完善系统功能和安全性。
+定期开展线上开发者讨论会，共同推动项目发展。
+通过该项目，用户将能够更加方便地使用Pi网络中的数字资产进行日常支付和资金管理，推动Pi网络的普及和应用。
 
-Implement a system to interface with Pi Network’s KYC process, ensuring that only verified users can interact with the platform.
-Integrate a reminder system that prompts users about KYC deadlines.
-Mobile Mining Integration:
 
-Develop a mobile-friendly Pi mining interface using the Stellar Consensus Protocol (SCP).
-Ensure energy-efficient algorithms are utilized to minimize resource consumption on users' devices.
-Mainnet DApp Development:
 
-Create a set of APIs that allow developers to build decentralized applications on the Pi Network’s Mainnet.
-Provide templates for smart contract deployment and interaction with Pi tokens.
-Pi Wallet and Transaction Integration:
 
-Develop a secure Pi wallet integration that allows for the storage, transfer, and staking of Pi tokens.
-Include transaction history and token exchange capabilities for users post-mainnet launch.
-Community Engagement Tools:
 
-Build tools for engaging with Pi’s global community through social features like referrals and trust-building mechanisms.
-Integrate Pi's Fireside Forum and Pi Ad Network to allow users to contribute to community discussions and advertising.
-Timeline:
 
-Q4 2024: Complete initial integrations for KYC, mining interface, and community tools.
-Q1 2025: Release wallet integration and API for DApp development.
-Q2 2025: Support Mainnet token transactions post-roadmap announcement.
-Repository Setup:
-
-Languages: Python, JavaScript (React for front-end), Solidity (for smart contracts).
-Tools: Stellar Consensus Protocol libraries, Web3.js, and mobile frameworks (React Native).
-This GitHub project will prepare developers for Pi Network’s full-scale launch, promoting early adoption of its decentralized applications and mining capabilities.
